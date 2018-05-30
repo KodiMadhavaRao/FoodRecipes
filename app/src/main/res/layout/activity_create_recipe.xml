@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_action_back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/create_recipe"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/save_recipe_into_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_action_done" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/create_recipe_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/recipe_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/create_recipe_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/recipe_description"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/create_no_of_servings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/no_of_servings"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/create_prep_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prep_time"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/create_cook_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cook_time"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/difficulty_level" />
+
+            <Spinner
+                android:id="@+id/create_difficulty_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/calories"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/calories"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/fat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/fat"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/carbohydrates"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/carbohydrates"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/protien"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/protein"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/cholestrol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/cholestrol"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/sodium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/sodium"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/create_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5" />
+
+            <LinearLayout
+                android:id="@+id/ingredients_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ingredients"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/delete_ingredients"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_minus" />
+
+                    <TextView
+                        android:id="@+id/no_of_ingredients"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/add_ingredients"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_add" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/create_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/instructions"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

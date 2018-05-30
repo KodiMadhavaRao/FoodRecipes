@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.7"
+        android:background="@android:color/black"></View>
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Food Recipes"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:drawablePadding="12dp"
+            android:hint="@string/email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lt_white" />
+
+        <EditText
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_action_password"
+            android:drawablePadding="12dp"
+            android:hint="@string/password"
+            android:textColorHint="@color/lt_white" />
+
+        <Button
+            android:background="@android:color/white"
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/sign_up"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/sign_in"
+        android:layout_below="@+id/login_view"/>
+
+</RelativeLayout>

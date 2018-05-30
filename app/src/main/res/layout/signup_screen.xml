@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.7"
+        android:background="@android:color/black"></View>
+
+    <TextView
+        android:id="@+id/sign_up_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_title"
+            android:orientation="vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_centerInParent="true">
+
+
+            <EditText
+                android:inputType="textPersonName"
+                android:id="@+id/reg_display_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_user"
+                android:drawablePadding="12dp"
+                android:hint="@string/name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lt_white" />
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_email"
+                android:drawablePadding="12dp"
+                android:hint="@string/email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lt_white" />
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_password"
+                android:drawablePadding="12dp"
+                android:hint="@string/password"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lt_white" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/reg_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_password"
+                android:drawablePadding="12dp"
+                android:hint="@string/confirm_password"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lt_white" />
+
+            <Spinner
+                android:id="@+id/reg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/reg_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_dob"
+                android:drawablePadding="12dp"
+                android:hint="@string/date_of_birth"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lt_white"
+                android:clickable="true"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"/>
+
+            <Spinner
+                android:id="@+id/reg_countries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/reg_sign_in"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:layout_marginBottom="8dp"/>
+            <Button
+                android:id="@+id/reg_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+</RelativeLayout>

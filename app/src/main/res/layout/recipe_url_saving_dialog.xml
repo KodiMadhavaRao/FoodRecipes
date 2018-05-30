@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/recipe_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg"
+        android:hint="Name your recipe"
+        android:inputType="text"
+        android:maxLines="2"
+        android:padding="15dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/recipe_url"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="center_vertical|top"
+        android:hint="Enter your URL"
+        android:inputType="textMultiLine"
+        android:maxLines="20"
+        android:minLines="5"
+        android:padding="15dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        tools:ignore="HardcodedText,TextFields" />
+
+</LinearLayout>

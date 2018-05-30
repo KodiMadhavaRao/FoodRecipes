@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#4db6ac</color>
+    <color name="colorPrimary_splash">#494db6ac</color>
+    <color name="colorPrimaryDark">#00867d</color>
+    <color name="colorAccent">#82e9de</color>
+    <color name="gray">#FFF0F0F0</color>
+    <color name="dark_gray">#5c5b5b</color>
+    <color name="gray_deep">#c9000000</color>
+    <color name="white">#ffffff</color>
+    <color name="lt_white">#deefefef</color>
+    <color name="delete_pad">#11d2d2d2</color>
+    <color name="delete_red">#da583b</color>
+    <color name="login_shade">#003d3d3d</color>
+    <color name="login_shade_t">#3e3e3e</color>
+
+</resources>

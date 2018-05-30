@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".ui.activities.RegistrationActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:contentDescription="@string/image_recipe"
+                android:src="@drawable/ic_plate_fork_and_knife" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/shadow_card_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="70dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-monospace"
+                android:text="@string/register"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-monospace"
+                android:text="@string/name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean" />
+
+            <EditText
+                android:id="@+id/reg_display_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-monospace"
+                android:text="@string/email"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean" />
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-monospace"
+                android:text="@string/password"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean" />
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-monospace"
+                android:text="@string/confirm_password"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean" />
+
+            <EditText
+                android:id="@+id/reg_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-monospace"
+                android:text="@string/gender"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean" />
+
+            <Spinner
+                android:id="@+id/reg_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-monospace"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean" />
+
+            <EditText
+                android:id="@+id/reg_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-monospace"
+                android:text="@string/countries"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean" />
+
+            <Spinner
+                android:id="@+id/reg_countries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <Button
+                android:id="@+id/reg_sign_in"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:text="@string/sign_in"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/reg_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ingredient_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp"
+    android:text="- 30 ml of oil of black cumin"
+    android:textColor="@color/colorAccent" />

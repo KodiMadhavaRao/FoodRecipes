@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_margin="10dp"
+        android:id="@+id/nav_profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/background" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:singleLine="true"
+        android:id="@+id/nav_user_name"
+        android:gravity="center_vertical"
+        android:layout_gravity="start"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:singleLine="true"
+        android:id="@+id/nav_user_email"
+        android:gravity="center_vertical"
+        android:layout_gravity="start"
+        android:layout_marginBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mail@gmail.com"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:singleLine="true"
+        android:layout_gravity="start"
+        android:id="@+id/nav_user_location"
+        android:layout_marginBottom="6dp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chicago"
+        android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+</LinearLayout>
