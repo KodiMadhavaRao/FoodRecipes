@@ -3,7 +3,7 @@ package foodrecepies.practise.com.foodrecepies;
 import android.app.Application;
 
 public class RecipeApplication extends Application {
-    private static RecipeApplication appContext;
+    public static RecipeApplication appContext;
 
     @Override
     public void onCreate() {
